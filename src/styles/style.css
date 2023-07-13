@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap'); */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;800&display=swap');
+
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -35,6 +41,8 @@ hr {
 header {
   padding: 10px 15px;
   color: #ffffff;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 800;
 }
 
 .heylyn-app__logo {
@@ -45,6 +53,7 @@ header {
 nav {
   margin: 0;
   padding: 0;
+  font-weight: 400 !important;
 }
 
 nav li {
@@ -74,20 +83,24 @@ main {
 .heylyn-app__list-song li {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 1fr 10fr 1fr 1fr;
   background-color: #2a2a2a;
   color: #ffffff;
-  padding: 10px 10px 6px 10px;
-  margin-bottom: 9px;
+  /* padding: 10px 10px 6px 10px; */
+  margin-bottom: 10px;
   border-radius: 8px;
 }
 
 .heylyn-app__img-song img {
-  width: 50px;
+  max-width: 56px;
+  min-height: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 8px 0 0 8px;
 }
 
-.heylyn-app__title-song {
-  padding: 8px 12px;
+.heylyn-app__list-title-song {
+  padding: 13px 12px !important;
 }
 
 .heylyn-app__title-song h3, p {
@@ -109,9 +122,20 @@ main {
   padding: 12px;
 }
 
-.heylyn-app__list-action-btn span {
-  font-size: 23px;
+.heylyn-app__list-song button {
+  background-color: transparent;
+  border: none;
   color: #a7a7a7;
+  padding: 10px;
+}
+
+.btn-favorite {
+  color: #13ae49;
+}
+
+.heylyn-app__list-song span {
+  font-size: 25px;
+  margin-top: 3px;
 }
 
 footer {
@@ -124,8 +148,18 @@ footer {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr 1fr;
   background-color: #0e0e0e;
-  padding: 8px 15px;
+  padding: 8px 15px 5px 15px;
   border-top: 2px solid #13ae49;
+}
+
+.heylyn-app__title-song {
+  padding: 8px 12px;
+}
+
+.heylyn-app__played img {
+  width: 50px;
+  object-position: center;
+  object-fit: cover;
 }
 
 .heylyn-app__played button {
